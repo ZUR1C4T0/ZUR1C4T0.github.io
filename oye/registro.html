@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYE-Registro</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary user-select-none">
+            <div class="container-lg">
+                <a class="navbar-brand d-flex" href="./inicio.html">
+                    <img src="./imagenes/logo.png" alt="Logo">
+                    <h1 class="text-primary ms-1 mb-0">OYE</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./canciones.html">Canciones</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item mb-2 mb-md-0">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#contacto">Contacto</button>
+                        </li>
+                        <li class="nav-item mb-2 mb-md-0">
+                            <a href="./inicio-de-sesion.html" class="btn btn-primary">Inicio de Sesión</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-md-0">
+                            <a href="./registro.html" class="btn btn-primary">Registro</a>
+                        </li>
+                    </ul>
+                    <form class="d-fle" hidden>
+                        <input class="form-control me-2" type="search" placeholder="Buscar">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg-6 mx-auto">
+                    <div class="p-5 my-4 bg-secondary rounded-3 shadow-lg">
+                        <form method="post" id="register" autocomplete="off">
+                            <legend>
+                                <h2>Registro</h2>
+                            </legend>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo Electrónico <b class="text-danger">*</b>
+                                </label>
+                                <input type="email" class="form-control" id="correo" name="correo"
+                                    placeholder="nombre@ejemplo.com">
+                                <span class="valid-feedback"></span>
+                                <span class="invalid-feedback"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contrasena" class="form-label">Contraseña <b class="text-danger">*</b>
+                                </label>
+                                <input type="password" class="form-control" id="contrasena" name="contrasena"
+                                    placeholder="Contraseña">
+                                <span class="valid-feedback"></span>
+                                <span class="invalid-feedback"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contrasena2" class="form-label">Contraseña <b class="text-danger">*</b>
+                                </label>
+                                <input type="password" class="form-control" id="contrasena2" name="contrasena2"
+                                    placeholder="Confirmación de la Contraseña">
+                                <span class="valid-feedback"></span>
+                                <span class="invalid-feedback"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="generoFavorito" class="form-label">Género Musical Favorito <b
+                                        class="text-danger">*</b> </label>
+                                <select class="form-select shadow" name="generoFavorito" id="generoFavorito">
+                                    <option value="" selected>Selecione...</option>
+                                    <option value="Rock">Rock</option>
+                                    <option value="Jazz">Jazz</option>
+                                    <option value="Dubstep">Dubstep</option>
+                                    <option value="Techno">Techno</option>
+                                    <option value="Musica_Country">Música Country</option>
+                                    <option value="Electro_Dance">Electro Dance</option>
+                                    <option value="Electronica">Electrónica</option>
+                                    <option value="Hip-Hop">Hip-Hop</option>
+                                    <option value="Heavy Metal">Heavy Metal</option>
+                                    <option value="Musica_Clasica">Música Clásica</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                                <span class="invalid-feedback"></span>
+                            </div>
+                            <div class="mb-3 ratio-group">
+                                <label class="form-label">Edad <b class="text-danger">*</b> </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="edad" id="<20"
+                                        value="Menor a 20 años">
+                                    <label class="form-check-label" for="<20">
+                                        Menor a 20 años
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="edad" id="20-40" value="20-40">
+                                    <label class="form-check-label" for="20-40">
+                                        Entre 20 y 40 años
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="edad" id=">40" value=">40">
+                                    <label class="form-check-label" for=">40">
+                                        Mayor a 40 años
+                                    </label>
+                                </div>
+                                <span class="invalid-feedback">error</span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check check-group">
+                                    <input class="form-check-input" type="checkbox" name="terminos"
+                                        id="terminos">
+                                    <label class="form-check-label" for="terminos">
+                                        Acepto los términos de uso <b class="text-danger">*</b>
+                                    </label>
+                                    <span class="invalid-feedback"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <p class="text-info">* CAMPOS OBLIGATORIOS</p>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Continuar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto">
+        <nav class="navbar bg-secondary">
+            <div class="container-lg">
+                <ul class="navbar-nav flex-row justify-content-between w-100">
+                    <li class="nav-item py-2 text-dark">Comparte la música!</li>
+                    <li class="nav-item py-2 text-dark">© Derechos Reservados</li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    <section>
+        <div class="modal" id="contacto" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p> <a href="mailto:info@oye.com" class="link-dark">info@oye.com</a> </p>
+                        <p class="text-info">+1 123 123123213</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
