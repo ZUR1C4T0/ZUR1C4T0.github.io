@@ -1,0 +1,14 @@
+.navbar-brand img{
+    height: calc(1.57rem + 2vw);
+    max-height: 50px;
+}
+
+/* bloque que permite que el Footer se mantenga en la parte inferior de la página */
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
