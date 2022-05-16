@@ -1,0 +1,47 @@
+{
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "html"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "window.restoreWindows": "none",
+  "workbench.iconTheme": "vs-seti",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "php.executablePth": "C:\\xampp\\php\\php.exe",
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "extensions.ignoreRecommendations": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.codeActionsOnSave": null,
+  "workbench.colorTheme": "Andromeda Italic Bordered",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.wordWrapColumn": 90,
+  "breadcrumbs.enabled": false,
+  "editor.fontSize": 18,
+  "editor.minimap.enabled": false,
+  "bracketPairColorizer.depreciation-notice": false,
+  "files.autoSave": "afterDelay",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false
+}
